@@ -12,7 +12,7 @@ mixin template({ id, title, category, company, role, technologies, link, label, 
 
     .case__information
       p.case__information__detail
-        | #[strong.case__information__detail__title Company]
+        | #[strong.case__information__detail__title Client]
         | #{company}
 
       p.case__information__detail
@@ -26,7 +26,7 @@ mixin template({ id, title, category, company, role, technologies, link, label, 
       if link
         p.case__information__detail
           | #[strong.case__information__detail__title #{label}]
-          | #[a(href=link target="_blank" rel="noreferrer noopener") View →]
+          | #[a(href=link, target="_blank", rel="noreferrer noopener") View →]
 
     .case__gallery
       each content, index in gallery
@@ -45,13 +45,13 @@ mixin template({ id, title, category, company, role, technologies, link, label, 
 
 .cases
   +template({
-    id: 'xbox-museum',
-    title: 'XBOX MUSEUM',
-    company: 'Active Theory',
-    role: 'Lead Developer',
-    technologies: 'WebGL · GLSL · JavaScript',
-    label: 'Live URL',
-    link: 'https://museum.xbox.com/',
+    id: 'true-food-kitchen',
+    title: 'TRUE FOOD KITCHEN',
+    company: 'True Food Kitchen',
+    role: 'AOR (Agency of Record)',
+    technologies: 'Google · Meta · iHeartRadio · YouTube · TikTok',
+    label: 'Case Study PDF',
+    link: 'https://storage.googleapis.com/leap-group/case-studies/TFKCaseStudyV2_final.pdf',
     gallery: [
       { image: '1', type: 'screenshot', height: '1080', width: '1920' },
       { image: '2', type: 'screenshot', height: '1080', width: '1920' },
@@ -65,24 +65,18 @@ mixin template({ id, title, category, company, role, technologies, link, label, 
       { image: '10', type: 'screenshot', height: '1080', width: '1920' },
       { image: '11', type: 'screenshot', height: '1080', width: '1920' },
       { image: '12', type: 'screenshot', height: '1080', width: '1920' },
-      { image: '13', type: 'screenshot', height: '1080', width: '1920' },
-      { image: '14', type: 'screenshot', height: '1080', width: '1920' },
-      { image: '15', type: 'screenshot', height: '1080', width: '1920' },
-      { image: '16', type: 'screenshot', height: '1080', width: '1920' },
-      { image: '17', type: 'screenshot', height: '1080', width: '1920' },
-      { image: '18', type: 'screenshot', height: '1080', width: '1920' },
-      { image: '19', type: 'screenshot', height: '1080', width: '1920' }
+      { image: '13', type: 'screenshot', height: '1080', width: '1920' }
     ]
   })
 
   +template({
-    id: 'bbdo',
-    title: 'BBDO',
-    company: 'Freelance',
+    id: 'summit-brands',
+    title: 'SUMMIT BRANDS',
+    company: 'Summit Brands',
     role: 'Interactive Developer',
     technologies: 'WordPress · WebGL · GLSL · JavaScript',
-    label: 'Live URL',
-    link: 'https://bbdo.de/',
+    label: 'Case Study PDF',
+    link: 'https://storage.googleapis.com/leap-group/case-studies/SummitCaseStudyv4.pdf',
     gallery: [
       { image: '1', type: 'screenshot', height: '1080', width: '1920' },
       { image: '2', type: 'screenshot', height: '1080', width: '1920' },
@@ -92,7 +86,10 @@ mixin template({ id, title, category, company, role, technologies, link, label, 
       { image: '6', type: 'screenshot', height: '1080', width: '1920' },
       { image: '7', type: 'screenshot', height: '1080', width: '1920' },
       { image: '8', type: 'screenshot', height: '1080', width: '1920' },
-      { image: '9', type: 'screenshot', height: '1080', width: '1920' }
+      { image: '9', type: 'screenshot', height: '1080', width: '1920' },
+      { image: '10', type: 'screenshot', height: '1080', width: '1920' },
+      { image: '11', type: 'screenshot', height: '1080', width: '1920' },
+      { image: '12', type: 'screenshot', height: '1080', width: '1920' }
     ]
   })
 
