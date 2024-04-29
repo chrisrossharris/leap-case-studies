@@ -1,5 +1,5 @@
 {
-  "name": "leap-clients",
+  "name": "leap-case-studies",
   "version": "1.0.0",
   "scripts": {
     "start": "npm run development",
